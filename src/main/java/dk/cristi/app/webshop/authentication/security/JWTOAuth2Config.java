@@ -24,8 +24,6 @@ public class JWTOAuth2Config extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private TokenStore tokenStore;
     @Autowired
-    private DefaultTokenServices tokenServices;
-    @Autowired
     private JwtAccessTokenConverter jwtAccessTokenConverter;
 
     @Override
