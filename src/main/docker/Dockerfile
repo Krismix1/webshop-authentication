@@ -8,5 +8,4 @@ RUN rm -f /usr/local/tomcat/conf/server.xml
 ADD server.xml /usr/local/tomcat/conf/server.xml
 ADD run.sh /usr/local/tomcat/bin/run.sh
 ENV SPRING_PROFILES_ACTIVE="@activeProfiles@"
-ENV CONFIG_IP=10.130.176.91
 CMD bash /usr/local/tomcat/bin/run.sh
